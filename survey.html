@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Coffee</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="topwrite">
+    <h1 id="title">Which Type Coffee?</h1>
+    <p id="description">The purpose of this survey is to find out which type of coffee people like.
+      Thank you for participating and take your time.</p>
+  </div>
+
+  
+  <form id="survey-form">
+
+    
+    <div class="form-elements">
+      <label id="name-label" for="name">Name</label><br>
+      <input id="name" type="text" placeholder="Enter Your Name" required>
+    </div>
+
+    
+    <div class="form-elements">
+      <label id="email-label" for="email">Email</label><br>
+      <input id="email" type="email" placeholder="Enter Your Email" required>
+    </div>
+
+    
+    <div class="form-elements">
+      <label id="number-label" for="number">Age</label><br>
+      <input id="number" type="number" placeholder="Enter Your Age" min="10" max="99" required>
+    </div>
+
+    
+    <div class="form-elements">
+      <label for="dropdown">Milk Preference</label><br>
+      <select id="dropdown">
+        <option value="milk">With Milk</option>
+        <option value="nomilk">Without Milk</option>
+      </select>
+    </div>
+
+    
+    <div class="form-elements">
+      <label for="temperature">Temperature</label><br>
+      <select id="temperature">
+        <option value="hot">Hot</option>
+        <option value="cold">Cold</option>
+      </select>
+    </div>
+
+    
+    <div class="form-elements">
+      <p class="selection">Sugar Preference</p>
+      <input type="radio" id="withsugar" name="sugar" value="withsugar">
+      <label for="withsugar">With Sugar</label>
+      <input type="radio" id="withoutsugar" name="sugar" value="withoutsugar">
+      <label for="withoutsugar">Without Sugar</label>
+    </div>
+
+    
+    <div class="form-elements">
+      <p class="selection">When do you drink coffee?</p>
+      <input type="checkbox" id="morningcoffee" value="morningcoffee">
+      <label for="morningcoffee">Morning Coffee</label>
+      <input type="checkbox" id="nooncoffee" value="nooncoffee">
+      <label for="nooncoffee">Afternoon Coffee</label>
+    </div>
+
+   
+    <div class="form-elements">
+      <label for="comments">Additional Comments:</label><br>
+      <textarea id="comments" rows="4" cols="30" placeholder="Your thoughts..."></textarea>
+    </div>
+
+    
+    <div class="form-elements">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+
+  </form>
+  </div>
+
+</body>
+</html>
+
